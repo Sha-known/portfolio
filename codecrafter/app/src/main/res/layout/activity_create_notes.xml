@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background=" #d6eaff"
+    tools:context=".CreateNotes">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="204dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/create_notes"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#090909"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="366dp"
+        android:layout_height="580dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/white_rounded_corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:id="@+id/NotesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notes Title"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#000000"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:ems="10"/>
+
+            <EditText
+                android:id="@+id/NotesContent"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:scrollbars="horizontal"
+                android:backgroundTint="#020202"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:hint="Notes Content"
+                android:textColorHint="#000000">
+
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/backToLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#D5E9FE"
+        app:srcCompat="@drawable/icons8_back_30" />
+
+    <Button
+        android:id="@+id/SaveNotes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#000b5c"
+        android:text="@string/save_notes"
+        android:textColor="#FFFFFF"></Button>
+
+</RelativeLayout>

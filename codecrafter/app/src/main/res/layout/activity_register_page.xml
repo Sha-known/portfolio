@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_Page"
+    android:background="#d6eaff">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="313dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@drawable/code_crafter_logo" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="178dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#011267"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <TextView
+        android:id="@+id/toLogin_Hyperlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a member? Login."
+        android:textColor="#011267"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/usernameInput"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#030870"
+        android:hint="Username"
+        android:textColor="#002067"
+        android:textColorHint="#4D033E95"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mobileInput"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#030870"
+        android:hint="Mobile"
+        android:textColor="#002067"
+        android:textColorHint="#4D033E95"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ageInput"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#030870"
+        android:hint="Age"
+        android:textColor="#002067"
+        android:textColorHint="#4D033E95"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/date_of_birthInput"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#030870"
+        android:hint="Date of Birth (mm-dd-yyyy)"
+        android:textColor="#002067"
+        android:textColorHint="#4D033E95"
+        android:textStyle="bold"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailInput"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#030870"
+        android:hint="Email"
+        android:textColor="#002067"
+        android:textColorHint="#4D033E95"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passwordInput"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#030870"
+        android:hint="Password"
+        android:textColor="#002067"
+        android:textColorHint="#4D033E95"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/retype_passwordInput"
+        android:layout_width="274dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#030870"
+        android:hint="Re-type Password"
+        android:textColor="#002067"
+        android:textColorHint="#4D033E95"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <RadioGroup
+        android:id="@+id/RadioParent"
+        android:layout_width="276dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/MaleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:buttonTint="#000b5c"
+            android:textColor="#000b5c"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/FemaleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"
+            android:backgroundTint="#000b5c"
+            android:buttonTint="#000b5c"
+            android:textColor="#000b5c"
+            android:textColorLink="#000b5c"
+            android:textStyle="bold"/>
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

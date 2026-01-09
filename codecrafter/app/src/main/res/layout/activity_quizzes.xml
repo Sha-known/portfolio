@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".Quizzes">
+
+    <TextView
+        android:id="@+id/txtQuizzes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Quizzes"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="4dp"/>
+
+    <ExpandableListView
+        android:id="@+id/elistView"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_above="@+id/bottomNavigator"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="-1dp"
+        android:childDivider="@color/white"
+        android:childIndicator="@color/black"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+        android:groupIndicator="@null" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigator"
+        app:itemBackground="@color/lightOrange"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

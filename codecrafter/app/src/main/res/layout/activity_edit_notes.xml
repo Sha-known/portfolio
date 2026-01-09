@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNotes"
+    android:background="#D5E9FE">
+
+    <ImageButton
+        android:id="@+id/backLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#D5E9FE"
+        app:srcCompat="@drawable/icons8_back_30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/edit_notes"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#090909"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="521dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="138dp"
+        android:background="@drawable/white_rounded_corners">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/EditTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Notes Title"
+                android:inputType="text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#000000"
+                android:textColor="#040404"
+                android:textColorHint="#020202"/>
+
+            <EditText
+                android:id="@+id/EditContent"
+                android:layout_width="match_parent"
+                android:layout_height="422dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="start"
+                android:hint="Notes Content"
+                android:scrollbars="horizontal"
+                android:backgroundTint="#000000"
+                android:textColor="#000000"
+                android:textColorHint="#000000">
+
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/SaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/save_notes"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        android:backgroundTint="#000b5c"
+        android:textColor="#FFFFFF">
+    </Button>
+
+    <Button
+        android:id="@+id/DeleteNotes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/delete_notes"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:backgroundTint="#000b5c"
+        android:textColor="#FFFFFF"></Button>
+
+</RelativeLayout>
