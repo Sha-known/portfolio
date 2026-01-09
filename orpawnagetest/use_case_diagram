@@ -1,0 +1,70 @@
+digraph UseCaseDiagram {
+	rankdir=LR size=10
+	User [fillcolor=lightblue shape=ellipse style=filled]
+	Admin [fillcolor=lightcoral shape=ellipse style=filled]
+	"Landing Page" [shape=ellipse]
+	User -> "Landing Page"
+	Donations [shape=ellipse]
+	User -> Donations
+	"Missing Pets" [shape=ellipse]
+	User -> "Missing Pets"
+	"Sign-Up Page" [shape=ellipse]
+	User -> "Sign-Up Page"
+	"About Us" [shape=ellipse]
+	User -> "About Us"
+	Logout [shape=ellipse]
+	User -> Logout
+	Report [shape=ellipse]
+	User -> Report
+	Profile [shape=ellipse]
+	User -> Profile
+	"Abused/Stray Pets" [shape=ellipse]
+	User -> "Abused/Stray Pets"
+	"Sign-In Page" [shape=ellipse]
+	User -> "Sign-In Page"
+	Adopt [shape=ellipse]
+	User -> Adopt
+	Services [shape=ellipse]
+	User -> Services
+	Rehome [shape=ellipse]
+	User -> Rehome
+	"Change Password" [shape=ellipse]
+	User -> "Change Password"
+	"Transaction Status" [shape=ellipse]
+	User -> "Transaction Status"
+	Dashboard [shape=ellipse]
+	Admin -> Dashboard
+	"Missing Pets" [shape=ellipse]
+	Admin -> "Missing Pets"
+	"Sign-Up Page" [shape=ellipse]
+	Admin -> "Sign-Up Page"
+	"Pet Profile Management" [shape=ellipse]
+	Admin -> "Pet Profile Management"
+	"Reports Management" [shape=ellipse]
+	Admin -> "Reports Management"
+	"Abused/Stray Pets" [shape=ellipse]
+	Admin -> "Abused/Stray Pets"
+	"Profile Settings" [shape=ellipse]
+	Admin -> "Profile Settings"
+	"Sign-In Page" [shape=ellipse]
+	Admin -> "Sign-In Page"
+	Adopt [shape=ellipse]
+	Admin -> Adopt
+	Rehome [shape=ellipse]
+	Admin -> Rehome
+	"Services Management" [shape=ellipse]
+	Admin -> "Services Management"
+	"User Management" [shape=ellipse]
+	Admin -> "User Management"
+	Services -> Adopt
+	Services -> Rehome
+	Report -> "Missing Pets"
+	Report -> "Abused/Stray Pets"
+	Profile -> "Change Password"
+	Profile -> "Transaction Status"
+	Profile -> Logout
+	"Services Management" -> Adopt
+	"Services Management" -> Rehome
+	"Reports Management" -> "Missing Pets"
+	"Reports Management" -> "Abused/Stray Pets"
+}
