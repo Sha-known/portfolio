@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+nav {
+ 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  
+}
+
+nav ul,
+nav ul li {
+  outline: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+main {
+  display: grid;
+  min-height: 85vh;
+  width: 100%;
+  margin: 40px;
+  background: rgb(254, 254, 254);
+  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  z-index: 10;
+}
+
+.main-menu {
+  overflow: hidden;
+  background: rgb(224, 130, 204);
+  padding-top: 10px;
+  border-radius: 15px 0 0 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-menu h1 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px 0 30px;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+
+.logo {
+  display: none;
+}
+
+.nav-item {
+  position: relative;
+  display: block;
+  margin-left: 2px;
+}
+
+.nav-item a {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 0;
+  margin-left: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.nav-item b:nth-child(1) {
+  position: absolute;
+  top: -15px;
+  height: 15px;
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+
+.nav-item b:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: rgb(224, 130, 204);
+}
+
+.nav-item b:nth-child(2) {
+  position: absolute;
+  bottom: -15px;
+  height: 15px;
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+
+.nav-item b:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background: rgb(224, 130, 204);
+}
+
+.nav-item.active b:nth-child(1),
+.nav-item.active b:nth-child(2) {
+  display: block;
+}
+
+.nav-item.active a {
+  text-decoration: none;
+  color: rgb(224, 130, 204);
+  background: rgb(254, 254, 254);
+
+}
+
+.nav-icon {
+  width: 60px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: -.5em;
+}
+
+.nav-text {
+  display: relative;
+  width: 120px;
+  height: 20px;
+  font-family: 'Space Mono', monospace;
+}
+
+
+
+@media (max-width: 1500px) {
+  main {
+    grid-template-columns: 10% 90%;
+  }
+
+  .main-menu h1 {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    width: 100px;
+    margin: 5px auto;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .content {
+    grid-template-columns: 70% 30%;
+  }
+}
+
+
+.input-group input {
+    width: 50%;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    background-color: var(--gray);
+    border-radius: .5rem;
+    border: 0.125rem solid var(--white);
+    outline: none;
+    border: 0.125rem solid var(--primary-color);
+}
+
+:root {
+    --primary-color: #d48cb0;
+    --secondary-color: #de78ac;
+    --gray: #ffffff;
+}
+
+.entry-text-box {
+  width: 100%;
+  height: 20em;
+  padding: 1em;
+  border-radius: .5rem;
+  border: unset;
+  background-color: #ffffff;
+  font-family: 'Space Mono', monospace;
+  border: 0.125rem solid var(--primary-color);
+  outline: none;
+}

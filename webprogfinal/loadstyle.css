@@ -1,0 +1,67 @@
+.example-loader-page {
+  position: relative;
+  font-family: Open Sans;
+  background: #f2f2f2;
+  height: 97vh;
+  overflow: hidden;
+}
+.determiniate-loader {
+  margin: 0 auto;
+  position: relative;
+  top: calc(50vh - 50px);
+  width: 100px;
+  height: 100px;
+}
+.determiniate-loader svg {
+  width: 100%;
+  overflow: visible;
+}
+.determiniate-loader svg .filler circle {
+  fill: none;
+  stroke: url("#bts-red");
+  stroke-width: 70;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: ani 5s ease-in-out forwards;
+  z-index: 1;
+  position: relative;
+}
+.determiniate-loader svg .base circle {
+  fill: none;
+  stroke: rgba(168,173,180,0.5);
+  stroke-width: 70;
+}
+.determiniate-loader .loader-status {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  font-size: 18x;
+  font-weight: 600;
+  color: #28324b;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+}
+@-moz-keyframes ani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes ani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-o-keyframes ani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes ani {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
